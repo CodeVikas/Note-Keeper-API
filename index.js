@@ -3,8 +3,8 @@ const serverless = require('serverless-http');
 const mongoose = require('mongoose');
 require('dotenv').config();
 
-const authRoutes = require('../routes/authRoute');
-const noteRoutes = require('../routes/noteRoutes');
+const authRoutes = require('./Routes/authRoute');
+const noteRoutes = require('./Routes/noteRoutes');
 
 const app = express();
 
