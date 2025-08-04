@@ -14,6 +14,10 @@ app.use(express.json());
 app.use("/api/auth", authRoutes);
 app.use("/api/notes", noteRoutes);
 
+app.get("/",(req,res)=>{
+  res.status(200).send("Hello from server!")
+})
+
 // ✅ Connect to MongoDB and start server
 mongoose
   .connect(process.env.MONGO_URI)
